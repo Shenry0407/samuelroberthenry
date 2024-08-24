@@ -18,6 +18,46 @@
     <meta name='impact-site-verification' value='3c1d971c-f2f1-407f-aff2-ac2869a758cc'>
 </head>
     <style>
+        @media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    header {
+        padding: 0 20px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* Portfolio items should be full width */
+    .portfolio__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Contact form adjustments */
+    .contact form {
+        padding: 0 20px;
+        width: 100%;
+    }
+}        
         /* General Styles */
         body {
             font-family: 'Kumbh Sans', sans-serif;
