@@ -42,4 +42,16 @@ function showSection(sectionId) {
         });
     }
 }
+<a href="travelentries" onclick="navigateToTravelEntries()">Travel Entries</a>
+
+function navigateToTravelEntries() {
+    // Change the URL without reloading the page
+    window.history.pushState({}, '', '/travelentries');
+
+    // Add any additional logic to load your travel entries content here
+    // For example, you might want to show the relevant section:
+    document.getElementById('travel-entries-section').style.display = 'block';
+    // Hide other sections if needed
+}
+
 
